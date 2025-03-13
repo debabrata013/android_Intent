@@ -68,6 +68,11 @@ class HomePage : AppCompatActivity() {
 
         val editText = findViewById<EditText>(R.id.editTextText)
         val searchButton = findViewById<Button>(R.id.button2)
+        val DateAndTimePicker = findViewById<Button>(R.id.button3)
+        DateAndTimePicker.setOnClickListener {
+            val intent = Intent(this, DateAndTimePicker::class.java)
+            startActivity(intent)
+        }
         imageView = findViewById(R.id.ImageViwe)
         val cameraButton = findViewById<Button>(R.id.Camera)
 
@@ -87,12 +92,12 @@ class HomePage : AppCompatActivity() {
         // Camera functionality
         cameraButton.setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            // Start the camera intent expecting a result (thumbnail image)
             startActivityForResult(intent, CAMERA_REQUEST_CODE)
         }
     }
 
-    // Handle the result from the camera intent
+
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == CAMERA_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
