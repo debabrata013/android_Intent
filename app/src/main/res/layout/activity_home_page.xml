@@ -9,33 +9,52 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="128dp"
-        android:layout_height="31dp"
+        android:layout_width="378dp"
+        android:layout_height="47dp"
         android:layout_marginTop="32dp"
+        android:background="#0097A7"
         android:text="Home"
+        android:textAlignment="center"
+        android:textColorLink="#FBFBFB"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    <EditText-->
+<!--        android:id="@+id/editTextText"-->
+<!--        android:layout_width="517dp"-->
+<!--        android:layout_height="76dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:hint="Enter your query"-->
+<!--        android:inputType="text"-->
+<!--        android:textColorHint="#7B1FA2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textView" />-->
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="517dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+
         android:hint="Enter your query"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textColor="#000000"
+        android:textColorHint="#7B1FA2"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
+        android:backgroundTint="#0097A7"
         android:text="Search Wikipedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -58,7 +77,9 @@
         android:layout_width="170dp"
         android:layout_height="67dp"
         android:layout_marginTop="104dp"
+        android:backgroundTint="#0097A7"
         android:text="Camara"
+        android:textColorLink="#0288D1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
